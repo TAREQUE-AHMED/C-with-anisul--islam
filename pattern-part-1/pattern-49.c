@@ -1,7 +1,7 @@
 /*
-1 
-2 2
-3 3 3
+  A
+ ABC
+ABCDE
 */
 #include<stdio.h>
 int main(){
@@ -9,8 +9,11 @@ int main(){
     printf("Enter the value of n: ");
     scanf("%d", &n);
     for (row = 1; row <= n;row++){
-        for (col = 1; col <= row;col++){
-            printf("%d ", row);
+        for (col = 1; col <= n - row;col++){
+            printf(" ");
+        }
+        for (col = 1; col <= 2 * row - 1;col++){
+            printf("%c", col+64);
         }
         printf("\n");
     }

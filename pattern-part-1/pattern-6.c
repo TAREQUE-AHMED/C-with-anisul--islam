@@ -1,16 +1,16 @@
 /*
-1 
-2 2
-3 3 3
+A 
+B B
+C C C
 */
 #include<stdio.h>
 int main(){
-    int col, row, n;
+    int n, row, col;
     printf("Enter the value of n: ");
     scanf("%d", &n);
     for (row = 1; row <= n;row++){
         for (col = 1; col <= row;col++){
-            printf("%d ", row);
+            printf("%c ", row + 64);
         }
         printf("\n");
     }
